@@ -37,14 +37,14 @@ class DealerSpec: QuickSpec {
 
             describe("placeBet") {
                 it("should return true if both the house and the player can afford the bet") {
-                    expect(dealer.placeBet(10)).to(beTrue())
+                    expect(dealer.placeBet(10)).to(beTruthy())
                     expect(dealer.currentBet).to(equal(10))
                 }
 
                 it("should return false if the house or the player cannot afford the bet") {
-                    expect(dealer.placeBet(200)).to(beFalse())
+                    expect(dealer.placeBet(200)).to(beFalsy())
                     expect(dealer.currentBet).to(equal(0))
-                    expect(dealer.placeBet(1200)).to(beFalse())
+                    expect(dealer.placeBet(1200)).to(beFalsy())
                     expect(dealer.currentBet).to(equal(0))
                 }
             }
