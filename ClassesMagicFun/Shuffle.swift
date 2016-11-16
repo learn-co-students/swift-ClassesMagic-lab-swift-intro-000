@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension MutableCollectionType where Index == Int {
+extension MutableCollection where Index == Int {
     mutating func shuffleInPlace() {
         // Borrowed from: <https://codedump.io/share/OCJt0TU9IfzE/1/how-do-i-shuffle-an-array-in-swift>
         guard count > 1 else { return }

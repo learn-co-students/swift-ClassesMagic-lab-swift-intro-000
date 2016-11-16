@@ -18,9 +18,9 @@ class Card {
     var value: Int {
         switch rank {
         case "A":
-            value = 1
-            case "J" || "Q" || "K":
-            value = 10
+            return 1
+        case "J", "Q", "K":
+            return 10
         default:
             if let value = Int(rank) {
                 return value
