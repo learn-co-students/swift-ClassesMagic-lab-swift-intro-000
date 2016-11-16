@@ -18,6 +18,13 @@ class Player {
     var handValue: UInt {
         var currentSum = 0
         for eachCard in hand {
+            if let eachCard.value == "A" {
+                if currentSum < 21 {
+                    eachCard.value = 10
+                } else {
+                    eachCard.value = 1
+                }
+            }
             currentSum += eachCard.value
         }
         // need to figure out the ace part.
@@ -25,19 +32,11 @@ class Player {
     }
     
     var isBlackJack: Bool {
-        if handValue == 21 {
-            return true
-        } else {
-            return false
-        }
+        return handValue == 21 ? true : false
     }
     
     var isBusted: Bool {
-        if handValue > 21 {
-            return true
-        } else {
-            return false
-        }
+        return handValue > 21 ? true : false
     }
     
     init(name: String) {
@@ -45,25 +44,17 @@ class Player {
         self.wallet = 100
         self.hand = []
     }
-    // returns error that it hasn't initialized all stored properties, differs from instructions.
+
     func dealCard(dealtCard: Card) {
         hand.append(dealtCard)
     }
     
     func canPlaceBet(currentBet: UInt) -> Bool {
-        if wallet < currentBet {
-            return true
-        } else {
-            return false
-        }
+        return wallet < currentBet ? true : false
     }
     
     func willHit(currentBet: UInt) -> Bool {
-        if canPlaceBet(currentBet: currentBet) && handSize < 21 {
-            return true
-        } else {
-            return false
-        }
+        return canPlaceBet(currentBet: currentBet) && handSize < 21 ? true : false
     }
     
     func win(amountWon: UInt) {
