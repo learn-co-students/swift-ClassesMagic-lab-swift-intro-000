@@ -16,19 +16,24 @@ class Player {
     }
     
     var handValue: UInt {
-        var currentSum = 0
-        for eachCard in hand {
-            if let eachCard.value == "A" {
-                if currentSum < 21 {
-                    eachCard.value = 10
-                } else {
-                    eachCard.value = 1
-                }
-            }
-            currentSum += eachCard.value
+        get {
+            var aceOfOne: Int = 0
+            var aceOfTen: Int = 0
+            
         }
-        // need to figure out the ace part.
-        return UInt(currentSum)
+//        var currentSum = 0
+//        for eachCard in hand {
+//            if let eachCard.value == "A" {
+//                if currentSum < 21 {
+//                    eachCard.value = 10
+//                } else {
+//                    eachCard.value = 1
+//                }
+//            }
+//            currentSum += eachCard.value
+//        }
+//        // need to figure out the ace part.
+//        return UInt(currentSum)
     }
     
     var isBlackJack: Bool {
@@ -50,7 +55,7 @@ class Player {
     }
     
     func canPlaceBet(currentBet: UInt) -> Bool {
-        return wallet < currentBet ? true : false
+        return wallet <= currentBet ? true : false
     }
     
     func willHit(currentBet: UInt) -> Bool {
