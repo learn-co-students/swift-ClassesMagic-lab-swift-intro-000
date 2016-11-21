@@ -54,7 +54,7 @@ class Player {
     }
     
     func canPlaceBet(currentBet: UInt) -> Bool {
-        return wallet < currentBet ? true : false
+        return wallet <= currentBet ? true : false
     }
     
     func willHit(currentBet: UInt) -> Bool {
