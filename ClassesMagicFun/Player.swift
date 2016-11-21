@@ -16,19 +16,23 @@ class Player {
     }
     
     var handValue: UInt {
-        var currentSum = 0
-        for eachCard in hand {
-            if let eachCard.value == "A" {
-                if currentSum < 21 {
-                    eachCard.value = 10
-                } else {
-                    eachCard.value = 1
-                }
-            }
-            currentSum += eachCard.value
+        // Ended up using the solution one for this because my initial attempt with filter then reduce seemed
+        // unnecessarily long and inelegant. Will refactor this to my own later when I understand the methods better.
+        let aces1 = hand.reduce(0) { (sum, card) in
+            return sum + Int(card.value)
         }
-        // need to figure out the ace part.
-        return UInt(currentSum)
+        
+        let aces10 = hand.reduce(0) {
+            (sum, card) in
+            let value = card.rank == "A" ? 11 : card.value
+            return sum + Int(value)
+        }
+        
+        if aces10 <= 21 {
+            return UInt(aces10)
+        } else {
+            return UInt(aces1)
+        }
     }
     
     var isBlackJack: Bool {
