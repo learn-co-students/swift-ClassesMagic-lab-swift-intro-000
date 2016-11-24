@@ -9,4 +9,19 @@
 import Foundation
 
 class Deck {
+    
+    var cards : [Card]
+    
+    func shuffle(){
+        cards.shuffleInPlace()
+    }
+    
+    func drawCard()-> Card? {
+        if cards.count != nil {
+            return Card?
+        } else {
+            return Card?
+        }
+    }
+    
 }
