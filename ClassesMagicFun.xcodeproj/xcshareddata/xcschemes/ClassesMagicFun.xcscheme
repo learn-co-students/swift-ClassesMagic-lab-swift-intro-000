@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0810"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -53,6 +53,16 @@
                BlueprintIdentifier = "7DADE37F1D3FEAC300792225"
                BuildableName = "ClassesMagicFunTests.xctest"
                BlueprintName = "ClassesMagicFunTests"
+               ReferencedContainer = "container:ClassesMagicFun.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "ED8D8D261DE6C1F200E0BA90"
+               BuildableName = "zzTests.xctest"
+               BlueprintName = "zzTests"
                ReferencedContainer = "container:ClassesMagicFun.xcodeproj">
             </BuildableReference>
          </TestableReference>
