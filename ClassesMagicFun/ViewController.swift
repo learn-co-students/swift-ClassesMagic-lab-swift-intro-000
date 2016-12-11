@@ -12,20 +12,24 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        
         let dealer = Dealer()
         var turn = "player"
         dealer.deal()
         if let _ = dealer.winner {
-            dealer.award()
+            dealer.award(233)
         }
         while dealer.winner == nil {
             let player = turn == "player" ? dealer.house : dealer.player
             dealer.turn(player)
             turn = turn == "player" ? "house" : "player"
         }
-        dealer.award()
-        print("Winner: \(dealer.winner?.name)")
+        dealer.award(777)
+        
+        dealer.twoCompare()
+        
+        print("Winner: \(dealer.winner!.name)")
     }
-
 }
