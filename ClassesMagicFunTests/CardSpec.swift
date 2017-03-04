@@ -8,14 +8,15 @@
 
 import Foundation
 import XCTest
-
 import Quick
+import Nimble
 @testable import ClassesMagicFun
 
 class CardSpec: QuickSpec {
     override func spec() {
         describe("Card") {
             let aceOfSpades = Card(suit: "♠︎", rank: "A")
+            let nineOfHearts = Card(suit: "♥︎", rank: "9")
             let queenOfHearts = Card(suit: "♥︎", rank: "Q")
             let tenOfDiamonds = Card(suit: "♦︎", rank: "10")
             let twoOfClubs = Card(suit: "♣︎", rank: "2")
@@ -23,6 +24,7 @@ class CardSpec: QuickSpec {
             describe("initializer") {
                 it("should set the suit property") {
                     expect(aceOfSpades.suit).to(equal("♠︎"))
+                    expect(nineOfHearts.suit).to(equal("♥︎"))
                     expect(queenOfHearts.suit).to(equal("♥︎"))
                     expect(tenOfDiamonds.suit).to(equal("♦︎"))
                     expect(twoOfClubs.suit).to(equal("♣︎"))
@@ -30,6 +32,7 @@ class CardSpec: QuickSpec {
 
                 it("should set the rank property") {
                     expect(aceOfSpades.rank).to(equal("A"))
+                    expect(nineOfHearts.rank).to(equal("9"))
                     expect(queenOfHearts.rank).to(equal("Q"))
                     expect(tenOfDiamonds.rank).to(equal("10"))
                     expect(twoOfClubs.rank).to(equal("2"))
