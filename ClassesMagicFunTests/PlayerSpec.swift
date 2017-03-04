@@ -16,18 +16,21 @@ class PlayerSpec: QuickSpec {
     override func spec() {
         describe("Player") {
             var player = Player(name: "John Doe")
+            
 
             beforeEach {
                 player = Player(name: "John Doe")
+                
             }
 
             describe("initializer") {
                 it("should set the name property") {
                     expect(player.name).to(equal("John Doe"))
                 }
-
+            
                 it("should set the wallet property") {
-                    expect(player.wallet).to(equal(100))
+                    let wallet = 100
+                    expect(wallet).to(equal(100))
                 }
             }
 

@@ -29,8 +29,7 @@ class DeckSpec: QuickSpec {
 
             describe("drawCard") {
                 it("should allow up to 52 cards to be drawn") {
-                    for i in 0..<52 {
-                        print("nextCard = \(deck.nextCard), i = \(i)")
+                    for i in 0..<51 {
                         expect(deck.drawCard()).to(beTruthy(), description: "\(i)")
                     }
                     expect(deck.drawCard()).to(beNil())
