@@ -8,7 +8,30 @@
 
 import Foundation
 
-class Deck {
+class Deck
+{
+    var cards: [Card] = []
+    
+    
+    func shuffle()
+    {
+        cards.shuffleInPlace()
+    }
+    
+    var cardCount:UInt = 0
+    func drawCard() ->Card? {
+        
+        if(!cards.isEmpty){
+            for(card) in self.cards{
+                _ = Card(suit: card.suit, rank: card.rank)
+                cardCount += 1
+                return cards.popLast()!
+            }
+        }
+        return nil
+    }
+
+    
     
     
 }
