@@ -9,6 +9,17 @@
 import Foundation
 
 class Deck {
-    
-    
+    var cards: [Card] = []
+    func shuffle() {
+        self.cards.shuffleInPlace()
+    }
+    func drawCard() -> Card? {
+        if !self.cards.isEmpty {
+            return nil
+        } else {
+            let card = self.cards[0]
+            self.cards.remove(at: 0)
+            return card
+        }
+    }
 }
