@@ -15,17 +15,18 @@ class ViewController: UIViewController {
 
         let dealer = Dealer()
         var turn = "player"
+        
         dealer.deal()
         if let _ = dealer.winner {
             dealer.award()
         }
         while dealer.winner == nil {
             let player = turn == "player" ? dealer.house : dealer.player
-            dealer.turn(player)
+            dealer.turn(player: player)
             turn = turn == "player" ? "house" : "player"
         }
         dealer.award()
-        print("Winner: \(dealer.winner?.name)")
+        print("Winner: \(String(describing: dealer.winner?.name))")
     }
 
 }
