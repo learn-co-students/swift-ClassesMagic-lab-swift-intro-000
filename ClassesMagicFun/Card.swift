@@ -9,7 +9,34 @@
 import Foundation
 
 class Card {
-  
+    var suit: String
+    var rank: String
+    
+    var label: String {
+        return suit + rank
+    }
+    
+    var value: UInt {
+        switch rank {
+        case "A":
+            return 1
+        case "J", "K", "Q":
+            return 10
+        default:
+            if let value = UInt(rank) {
+                return value
+            }
+            else {
+                return 0
+            }
+        }
+    }
+    
+    init(suit: String, rank: String) {
+        self.suit = suit
+        self.rank = rank
+    }
+    
 }
 
 
