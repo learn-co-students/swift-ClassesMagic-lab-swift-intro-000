@@ -10,5 +10,26 @@ import Foundation
 
 class Deck {
     
+    var cards : [Card];
+    var hasCards : Bool {
+        if(cards.count > 0) {
+            return true;
+        }
+        return false;
+    }
     
+    func shuffle() {
+        cards.shuffleInPlace();
+    }
+    
+    func drawCard() -> Card? {
+        if(hasCards) {
+            return cards.remove(at: 0)
+        }
+        return nil;
+    }
+    
+    init() {
+        cards = [];
+    }
 }
