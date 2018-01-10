@@ -9,4 +9,40 @@
 import Foundation
 
 class Dealer {
+    var deck: Deck
+    var player: Player
+    var house: House
+    var winner: Player?
+
+    init() {
+        self.deck = Deck()
+        self.player = Player(name: "Player")
+        self.house = House()
+    }
+    func deal(){
+        self.player.dealCard(self.deck.drawCard()!)
+        self.player.dealCard(self.deck.drawCard()!)
+        if self.player.isBlackJack {
+            self.winner = self.player
+        }
+        self.house.dealCard(self.deck.drawCard()!)
+        self.house.dealCard(self.deck.drawCard()!)
+        if self.house.isBlackJack{
+            self.winner = self.house
+        }
+    }
+    func turn(_ bet:UInt){
+        while (player.willHit(100)){
+            player.dealCard(deck.drawCard()!)
+        }
+    }
+    func award(_ bet:UInt){
+        if(winner!.name == "Player"){
+            player.wallet += bet
+            house.wallet -= bet
+        }else{
+            player.wallet -= bet
+            house.wallet += bet
+        }
+    }
 }
