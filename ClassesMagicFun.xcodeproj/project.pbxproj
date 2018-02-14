@@ -214,6 +214,7 @@
 				TargetAttributes = {
 					7DADE36B1D3FEAC300792225 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = QM9U5GRFNF;
 						LastSwiftMigration = 0820;
 					};
 					7DADE37F1D3FEAC300792225 = {
@@ -452,7 +453,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -493,7 +494,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -506,7 +507,9 @@
 			baseConfigurationReference = 9670F7936EDBAABB1419F990 /* Pods-ClassesMagicFun.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QM9U5GRFNF;
 				INFOPLIST_FILE = ClassesMagicFun/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flatironschool.Swift.ClassesMagicFun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -519,7 +522,9 @@
 			baseConfigurationReference = 46ADA164BEA26182D4183F41 /* Pods-ClassesMagicFun.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QM9U5GRFNF;
 				INFOPLIST_FILE = ClassesMagicFun/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flatironschool.Swift.ClassesMagicFun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
