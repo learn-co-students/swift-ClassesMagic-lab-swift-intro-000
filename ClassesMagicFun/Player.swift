@@ -19,11 +19,11 @@ class Player {
     }
     
     var handValue:UInt {
-        var cardValue = 0
+        var cardValue:UInt = 0
         for card in hand {
-            cardValue+=card.value
+            cardValue += card.value
         }
-        return UInt(cardValue)
+        return cardValue
     }
     
     var isBlackjack:Bool {
