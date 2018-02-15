@@ -10,8 +10,7 @@ import Foundation
 
 class Deck {
     
-    //var cards:[Card] = []
-    var cards = [Card]()
+    var cards:[Card] = []
     //private var deckIndex = -1
     init() {
         createDeck()
@@ -28,8 +27,6 @@ class Deck {
             }
         }
     }
-    
-    
     
     func shuffle() {
         cards.shuffleInPlace()
