@@ -9,7 +9,7 @@
 import Foundation
 
 class Dealer:Deck {
-    var bet:UInt = 10
+    var bet:UInt = 0
     var totalCards = 0
     var deck = Deck().cards
     
@@ -32,27 +32,20 @@ class Dealer:Deck {
             return house
         }
         
-        /*
-        if player.isBlackjack || (player.handValue > house.handValue && player.handValue < 21) {
-            return player
-        }
-        else if house.isBlackjack || (house.handValue > player.handValue && house.handValue < 21) {
-            return house  
-        }*/
         return nil
     }
     
     
     func deal() {
-        print("deck = \(deck)")
+        //print("deck = \(deck)")
         for _ in 1...2 {
             player.dealCard(card: deck[0])
             deck.remove(at: 0)
             house.dealCard(card: deck[0])
             deck.remove(at: 0)
         }
-        print("player.handValue = \(player.handValue)  player.hand = \(player.hand)")
-        print("house.handValue = \(house.handValue)  house.hand = \(house.hand)")
+        //print("player.handValue = \(player.handValue)  player.hand = \(player.hand)")
+        //print("house.handValue = \(house.handValue)  house.hand = \(house.hand)")
         
         if player.isBlackjack {
             player = winner!
@@ -63,6 +56,8 @@ class Dealer:Deck {
     func turn(player:Player) {
         if player.handValue < 21 && player.handSize < 5 {
             player.dealCard(card: deck[0])
+            deck.remove(at: 0)
+            //print("deck.count = \(deck.count)")
         }
     }
     

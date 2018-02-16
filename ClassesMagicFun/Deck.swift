@@ -29,10 +29,6 @@ class Deck {
         }
     }
     
-    func removeCard() {
-        cards.remove(at: 0)
-    }
-    
     func shuffle() {
         cards.shuffleInPlace()
     }

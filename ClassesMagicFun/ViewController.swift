@@ -23,10 +23,11 @@ class ViewController: UIViewController {
         }
         while dealer.winner == nil {
             count+=1
-            print("count = \(count)")
             let player = (turn == "player" ? dealer.house : dealer.player)
             dealer.turn(player: player)
             turn = (turn == "player" ? "house" : "player")
+            
+            print("count = \(count)")
             print("turn = \(turn)")
         }
         dealer.award()
