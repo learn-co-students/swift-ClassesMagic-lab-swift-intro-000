@@ -8,43 +8,51 @@
 
 import Foundation
 
-class Dealer {
+class Dealer:Deck {
     var bet:UInt = 10
+    var totalCards = 0
     var deck = Deck().cards
     
     var player:Player
     var house:House
     
-    var winner:Player? {
-        //let deal = Dealer()
-        if player.isBlackjack {
-            return player
-        }
-        else if house.isBlackjack {
-            return house
-            
-        }
-        else if player.handValue > house.handValue && player.handValue < 21 {
-            return player
-        }
-        else if house.handValue > player.handValue && house.handValue < 21 {
-            return house
-        }
-        return nil
-    }
     
-    init() {
+    override init() {
         self.player = Player(name: "Player")
         self.house = House()
     }
     
+    var winner:Player? {
+        print("player.handValue = \(player.handValue)  player.hand = \(player.hand)")
+        print("house.handValue = \(house.handValue)  house.hand = \(house.hand)")
+        
+        if player.isBlackjack || house.isBusted {
+            return player
+        } else if house.isBlackjack || player.isBusted {
+            return house
+        }
+        
+        /*
+        if player.isBlackjack || (player.handValue > house.handValue && player.handValue < 21) {
+            return player
+        }
+        else if house.isBlackjack || (house.handValue > player.handValue && house.handValue < 21) {
+            return house  
+        }*/
+        return nil
+    }
+    
     
     func deal() {
-        //print("deck = \(deck)")
+        print("deck = \(deck)")
         for _ in 1...2 {
             player.dealCard(card: deck[0])
+            deck.remove(at: 0)
             house.dealCard(card: deck[0])
+            deck.remove(at: 0)
         }
+        print("player.handValue = \(player.handValue)  player.hand = \(player.hand)")
+        print("house.handValue = \(house.handValue)  house.hand = \(house.hand)")
         
         if player.isBlackjack {
             player = winner!
@@ -53,7 +61,7 @@ class Dealer {
         }
     }
     func turn(player:Player) {
-        if player.handValue < 21 {
+        if player.handValue < 21 && player.handSize < 5 {
             player.dealCard(card: deck[0])
         }
     }
@@ -65,22 +73,7 @@ class Dealer {
         } else {
             winner?.lose(amountLost: bet)
         }
-        
-        
-        
+      
     }
-    
-    /*
-    func createDeck2() {
-        let cardRanks = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
-        let suits = [ "♠︎","♥︎","♦︎","♣︎"]
-        //var deck:[Card] = []
-        for suit in suits {
-            for rank in cardRanks {
-                let tempCard = Card(suit: suit, rank: rank)
-                deck.append(tempCard)
-            }
-        }
-    }
-    */
+
 }

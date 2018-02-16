@@ -9,23 +9,28 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var count = 0
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let dealer = Dealer()
+        //print("dealer = \(dealer)")
         var turn = "player"
         dealer.deal()
         if let _ = dealer.winner {
             dealer.award()
         }
         while dealer.winner == nil {
-            let player = turn == "player" ? dealer.house : dealer.player
-            dealer.turn(player)
-            turn = turn == "player" ? "house" : "player"
+            count+=1
+            print("count = \(count)")
+            let player = (turn == "player" ? dealer.house : dealer.player)
+            dealer.turn(player: player)
+            turn = (turn == "player" ? "house" : "player")
+            print("turn = \(turn)")
         }
         dealer.award()
-        print("Winner: \(dealer.winner?.name)")
+        print("Winner: \(String(describing: dealer.winner?.name))")
     }
 
 }
