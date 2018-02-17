@@ -28,7 +28,9 @@ class ViewController: UIViewController {
             turn = (turn == "player" ? "house" : "player")
             
             print("count = \(count)")
-            print("turn = \(turn)")
+            //print("turn = \(turn)")
+            print("dealer.winner = \(String(describing: dealer.winner))")
+            
         }
         dealer.award()
         print("Winner: \(String(describing: dealer.winner?.name))")

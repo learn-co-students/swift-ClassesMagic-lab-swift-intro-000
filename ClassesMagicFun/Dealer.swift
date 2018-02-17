@@ -44,8 +44,6 @@ class Dealer:Deck {
             house.dealCard(card: deck[0])
             deck.remove(at: 0)
         }
-        //print("player.handValue = \(player.handValue)  player.hand = \(player.hand)")
-        //print("house.handValue = \(house.handValue)  house.hand = \(house.hand)")
         
         if player.isBlackjack {
             player = winner!
