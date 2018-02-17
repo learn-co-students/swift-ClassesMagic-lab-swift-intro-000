@@ -50,7 +50,7 @@ class Player {
         
     }
     
-    func placeBet(bet:UInt) -> Bool {
+    func canPlaceBet(bet:UInt) -> Bool {
         if bet < wallet {
             return true
         }
@@ -58,7 +58,7 @@ class Player {
     }
     
     func willHit(bet:UInt) -> Bool {
-        if placeBet(bet: bet) && handValue < 21 {
+        if canPlaceBet(bet: bet) && handValue < 21 {
             wallet-=bet
             return true
         }

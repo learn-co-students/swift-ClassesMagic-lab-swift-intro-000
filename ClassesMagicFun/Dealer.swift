@@ -23,18 +23,23 @@ class Dealer:Deck {
     }
     
     var winner:Player? {
-        print("player.handValue = \(player.handValue)  player.hand = \(player.hand)")
-        print("house.handValue = \(house.handValue)  house.hand = \(house.hand)")
+        print("player.handValue = \(player.handValue)  player.handSize = \(player.handSize )")
+        print("house.handValue = \(house.handValue)  house.handSize = \(house.handSize)")
         
         if player.isBlackjack || house.isBusted {
             return player
         } else if house.isBlackjack || player.isBusted {
             return house
+        } else if player.handSize == 5 && house.handSize == 5 {
+            if player.handValue > house.handValue {
+                return player
+            } else {
+                return house
+            }
         }
         
         return nil
     }
-    
     
     func deal() {
         //print("deck = \(deck)")
@@ -53,6 +58,7 @@ class Dealer:Deck {
     }
     func turn(player:Player) {
         if player.handValue < 21 && player.handSize < 5 {
+            
             player.dealCard(card: deck[0])
             deck.remove(at: 0)
             //print("deck.count = \(deck.count)")
@@ -60,7 +66,6 @@ class Dealer:Deck {
     }
     
     func award() {
-        
         if (winner != nil) {
             winner?.win(amountWin: bet)
         } else {
