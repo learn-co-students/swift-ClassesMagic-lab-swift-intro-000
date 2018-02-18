@@ -8,7 +8,8 @@
 
 class Player {
     let name:String
-    var wallet:UInt = 1000
+    
+    var wallet:UInt = 200
     var amountWin:UInt = 0
     var amoutLost:UInt = 0
     
@@ -60,17 +61,24 @@ class Player {
     func willHit(bet:UInt) -> Bool {
         if canPlaceBet(bet: bet) && handValue < 21 {
             wallet-=bet
+            amountWin+=(2*bet)
+            //print("wallet = \(wallet)")
+            //print("amountWin = \(amountWin)")
             return true
         }
         return false
     }
     
-    func win(amountWin:UInt) {
-        return wallet+=amountWin
+    func win(amount:UInt) -> UInt {
+        //print("wallet = \(wallet)")
+        wallet+=amountWin
+        //print("walletWinnings = \(wallet)")
+        return wallet
     }
     
-    func lose(amountLost:UInt) {
-        return wallet-=amountLost
+    func lose(amountLost:UInt) -> UInt {
+        wallet-=amountWin
+        return wallet
     }
     
 }

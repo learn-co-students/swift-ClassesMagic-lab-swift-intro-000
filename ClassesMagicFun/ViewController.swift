@@ -15,11 +15,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         let dealer = Dealer()
-        //print("dealer = \(dealer)")
         var turn = "player"
         dealer.deal()
         if let _ = dealer.winner {
-            dealer.award()
+            let totalWinning = dealer.award()
+            print("\nWinner is: \(dealer.winner!.name), winnings = \(totalWinning)")
         }
         while dealer.winner == nil {
             count+=1
@@ -32,8 +32,8 @@ class ViewController: UIViewController {
             print("dealer.winner = \(String(describing: dealer.winner))")
             
         }
-        dealer.award()
-        print("Winner: \(String(describing: dealer.winner?.name))")
+        let totalWinning = dealer.award()
+        print("\nWinner is: \(dealer.winner!.name), winnings = \(totalWinning)")
     }
 
 }
