@@ -13,7 +13,6 @@ class Dealer:Deck {
     var amountWin:UInt = 0
     var totalCards = 0
     var deck = Deck().cards
-    
     var player:Player
     var house:House
     
@@ -74,7 +73,7 @@ class Dealer:Deck {
             //print("winnings = \(winnings)")
             return winnings
         }
-        return (player.wallet - amountWin)
+        return player.lose(amountLost: amountWin)
     }
 
 }

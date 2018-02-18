@@ -62,8 +62,8 @@ class Player {
         if canPlaceBet(bet: bet) && handValue < 21 {
             wallet-=bet
             amountWin+=(2*bet)
-            //print("wallet = \(wallet)")
-            //print("amountWin = \(amountWin)")
+            print("wallet = \(wallet)")
+            print("amountWin = \(amountWin)")
             return true
         }
         return false

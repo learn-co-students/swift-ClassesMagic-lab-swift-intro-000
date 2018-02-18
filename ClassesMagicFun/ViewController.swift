@@ -13,7 +13,8 @@ class ViewController: UIViewController {
     var count = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        var loser = Player(name: "")
         let dealer = Dealer()
         var turn = "player"
         dealer.deal()
@@ -22,6 +23,7 @@ class ViewController: UIViewController {
             print("\nWinner is: \(dealer.winner!.name), winnings = \(totalWinning)")
         }
         while dealer.winner == nil {
+            
             count+=1
             let player = (turn == "player" ? dealer.house : dealer.player)
             dealer.turn(player: player)
@@ -29,11 +31,19 @@ class ViewController: UIViewController {
             
             print("count = \(count)")
             //print("turn = \(turn)")
-            print("dealer.winner = \(String(describing: dealer.winner))")
+            //print("dealer.winner = \(String(describing: dealer.winner))")
             
         }
+        if dealer.winner?.name == "Player" {
+            loser = dealer.house
+        } else {
+            loser = dealer.player
+        }
+        
         let totalWinning = dealer.award()
-        print("\nWinner is: \(dealer.winner!.name), winnings = \(totalWinning)")
+        print("\nWinner is: \(dealer.winner!.name), winnings = \(totalWinning),\nwallet $$ = \(dealer.player.wallet - dealer.player.amountWin), price $$ = \(dealer.player.amountWin)")
+        
+        print("\nLoser is: \(loser.name)")
     }
 
 }
