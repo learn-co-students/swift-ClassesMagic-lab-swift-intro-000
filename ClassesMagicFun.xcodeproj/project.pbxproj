@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E45CA545FBDE808C04C6928 /* Pods_ClassesMagicFun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3C1B9077BB417B3F588997F /* Pods_ClassesMagicFun.framework */; };
+		35065A837D945F0B578CB08F /* Pods_ClassesMagicFun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4FDACDAB23FB5725C311C9D /* Pods_ClassesMagicFun.framework */; };
 		7DADE3701D3FEAC300792225 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DADE36F1D3FEAC300792225 /* AppDelegate.swift */; };
 		7DADE3721D3FEAC300792225 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DADE3711D3FEAC300792225 /* ViewController.swift */; };
 		7DADE3751D3FEAC300792225 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DADE3731D3FEAC300792225 /* Main.storyboard */; };
 		7DADE3771D3FEAC300792225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DADE3761D3FEAC300792225 /* Assets.xcassets */; };
 		7DADE37A1D3FEAC300792225 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DADE3781D3FEAC300792225 /* LaunchScreen.storyboard */; };
-		9A941D9E1CF59405EABBD417 /* Pods_ClassesMagicFunTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5480000448BF7A965D77BAE /* Pods_ClassesMagicFunTests.framework */; };
+		81FB91E54307DA7A0E398F2F /* Pods_ClassesMagicFunTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7961CF1AF4D798BB04ACD7DA /* Pods_ClassesMagicFunTests.framework */; };
 		B798E8FB1D4C576400578504 /* CardSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B798E8FA1D4C576400578504 /* CardSpec.swift */; };
 		B798E8FD1D4C59C400578504 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B798E8FC1D4C59C400578504 /* Card.swift */; };
 		B798E9051D4C704600578504 /* DeckSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B798E9041D4C704600578504 /* DeckSpec.swift */; };
@@ -38,9 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F2EA896849037104EE89D31 /* Pods-ClassesMagicFunTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClassesMagicFunTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClassesMagicFunTests/Pods-ClassesMagicFunTests.release.xcconfig"; sourceTree = "<group>"; };
-		3BF13A2B26B6A0CFCF6E74C5 /* Pods-ClassesMagicFunTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClassesMagicFunTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClassesMagicFunTests/Pods-ClassesMagicFunTests.debug.xcconfig"; sourceTree = "<group>"; };
-		46ADA164BEA26182D4183F41 /* Pods-ClassesMagicFun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClassesMagicFun.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClassesMagicFun/Pods-ClassesMagicFun.release.xcconfig"; sourceTree = "<group>"; };
+		3C2E514360F2261E631F2019 /* Pods-ClassesMagicFun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClassesMagicFun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClassesMagicFun/Pods-ClassesMagicFun.debug.xcconfig"; sourceTree = "<group>"; };
+		615B4C077B2C66A3CE8CF928 /* Pods-ClassesMagicFunTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClassesMagicFunTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClassesMagicFunTests/Pods-ClassesMagicFunTests.release.xcconfig"; sourceTree = "<group>"; };
+		7961CF1AF4D798BB04ACD7DA /* Pods_ClassesMagicFunTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClassesMagicFunTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DADE36C1D3FEAC300792225 /* ClassesMagicFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassesMagicFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DADE36F1D3FEAC300792225 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DADE3711D3FEAC300792225 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +50,6 @@
 		7DADE37B1D3FEAC300792225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DADE3801D3FEAC300792225 /* ClassesMagicFunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassesMagicFunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DADE3861D3FEAC300792225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9670F7936EDBAABB1419F990 /* Pods-ClassesMagicFun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClassesMagicFun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClassesMagicFun/Pods-ClassesMagicFun.debug.xcconfig"; sourceTree = "<group>"; };
 		B798E8FA1D4C576400578504 /* CardSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSpec.swift; sourceTree = "<group>"; };
 		B798E8FC1D4C59C400578504 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		B798E9041D4C704600578504 /* DeckSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckSpec.swift; sourceTree = "<group>"; };
@@ -62,8 +61,9 @@
 		B798E9121D4D406C00578504 /* HouseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseSpec.swift; sourceTree = "<group>"; };
 		B798E9141D4D442F00578504 /* DealerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealerSpec.swift; sourceTree = "<group>"; };
 		B798E9161D4D452600578504 /* Dealer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dealer.swift; sourceTree = "<group>"; };
-		C5480000448BF7A965D77BAE /* Pods_ClassesMagicFunTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClassesMagicFunTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3C1B9077BB417B3F588997F /* Pods_ClassesMagicFun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClassesMagicFun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3459C4CB93E0A49590F7DBC /* Pods-ClassesMagicFunTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClassesMagicFunTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClassesMagicFunTests/Pods-ClassesMagicFunTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F46390D2A32C7D4ECC91E9FA /* Pods-ClassesMagicFun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClassesMagicFun.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClassesMagicFun/Pods-ClassesMagicFun.release.xcconfig"; sourceTree = "<group>"; };
+		F4FDACDAB23FB5725C311C9D /* Pods_ClassesMagicFun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClassesMagicFun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E45CA545FBDE808C04C6928 /* Pods_ClassesMagicFun.framework in Frameworks */,
+				35065A837D945F0B578CB08F /* Pods_ClassesMagicFun.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,30 +79,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A941D9E1CF59405EABBD417 /* Pods_ClassesMagicFunTests.framework in Frameworks */,
+				81FB91E54307DA7A0E398F2F /* Pods_ClassesMagicFunTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3B9AD5965275149E10ACD102 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E3C1B9077BB417B3F588997F /* Pods_ClassesMagicFun.framework */,
-				C5480000448BF7A965D77BAE /* Pods_ClassesMagicFunTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		7DADE3631D3FEAC300792225 = {
 			isa = PBXGroup;
 			children = (
 				7DADE36E1D3FEAC300792225 /* ClassesMagicFun */,
 				7DADE3831D3FEAC300792225 /* ClassesMagicFunTests */,
 				7DADE36D1D3FEAC300792225 /* Products */,
-				DB458CA92381089AD58606CF /* Pods */,
-				3B9AD5965275149E10ACD102 /* Frameworks */,
+				DD084EAC3394E6250BEE06ED /* Pods */,
+				7E5BF49AB698C23FDE1FAA51 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,13 +138,22 @@
 			path = ClassesMagicFunTests;
 			sourceTree = "<group>";
 		};
-		DB458CA92381089AD58606CF /* Pods */ = {
+		7E5BF49AB698C23FDE1FAA51 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9670F7936EDBAABB1419F990 /* Pods-ClassesMagicFun.debug.xcconfig */,
-				46ADA164BEA26182D4183F41 /* Pods-ClassesMagicFun.release.xcconfig */,
-				3BF13A2B26B6A0CFCF6E74C5 /* Pods-ClassesMagicFunTests.debug.xcconfig */,
-				0F2EA896849037104EE89D31 /* Pods-ClassesMagicFunTests.release.xcconfig */,
+				F4FDACDAB23FB5725C311C9D /* Pods_ClassesMagicFun.framework */,
+				7961CF1AF4D798BB04ACD7DA /* Pods_ClassesMagicFunTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD084EAC3394E6250BEE06ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C2E514360F2261E631F2019 /* Pods-ClassesMagicFun.debug.xcconfig */,
+				F46390D2A32C7D4ECC91E9FA /* Pods-ClassesMagicFun.release.xcconfig */,
+				E3459C4CB93E0A49590F7DBC /* Pods-ClassesMagicFunTests.debug.xcconfig */,
+				615B4C077B2C66A3CE8CF928 /* Pods-ClassesMagicFunTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -165,12 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DADE3891D3FEAC300792225 /* Build configuration list for PBXNativeTarget "ClassesMagicFun" */;
 			buildPhases = (
-				67B8A6F32B2AEE4BF077533C /* [CP] Check Pods Manifest.lock */,
+				57BD96502DD0118A5241E544 /* [CP] Check Pods Manifest.lock */,
 				7DADE3681D3FEAC300792225 /* Sources */,
 				7DADE3691D3FEAC300792225 /* Frameworks */,
 				7DADE36A1D3FEAC300792225 /* Resources */,
-				A4E5A083668AA985B20D55CB /* [CP] Embed Pods Frameworks */,
-				20BEBFFF48E211B4087D539C /* [CP] Copy Pods Resources */,
+				662A14273E74557D9A27892C /* [CP] Embed Pods Frameworks */,
+				2DBE55E32F205B16E911A326 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,12 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DADE38C1D3FEAC300792225 /* Build configuration list for PBXNativeTarget "ClassesMagicFunTests" */;
 			buildPhases = (
-				E2522B9FE659508E692CD59A /* [CP] Check Pods Manifest.lock */,
+				6F5E96C26BE49B9B6DAFABDA /* [CP] Check Pods Manifest.lock */,
 				7DADE37C1D3FEAC300792225 /* Sources */,
 				7DADE37D1D3FEAC300792225 /* Frameworks */,
 				7DADE37E1D3FEAC300792225 /* Resources */,
-				534A05505F2053D4B5764A8F /* [CP] Embed Pods Frameworks */,
-				B0BD3C5D00E784D1508C9112 /* [CP] Copy Pods Resources */,
+				FDA8DE84DF18123314CD1EB8 /* [CP] Embed Pods Frameworks */,
+				5FAD4366E05D02EDDE5F8AF8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,11 +209,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Gamesmith, LLC";
 				TargetAttributes = {
 					7DADE36B1D3FEAC300792225 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = QM9U5GRFNF;
 						LastSwiftMigration = 0820;
 					};
 					7DADE37F1D3FEAC300792225 = {
@@ -263,7 +264,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		20BEBFFF48E211B4087D539C /* [CP] Copy Pods Resources */ = {
+		2DBE55E32F205B16E911A326 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -278,52 +279,25 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClassesMagicFun/Pods-ClassesMagicFun-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		534A05505F2053D4B5764A8F /* [CP] Embed Pods Frameworks */ = {
+		57BD96502DD0118A5241E544 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClassesMagicFunTests/Pods-ClassesMagicFunTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		67B8A6F32B2AEE4BF077533C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClassesMagicFun-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A4E5A083668AA985B20D55CB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClassesMagicFun/Pods-ClassesMagicFun-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B0BD3C5D00E784D1508C9112 /* [CP] Copy Pods Resources */ = {
+		5FAD4366E05D02EDDE5F8AF8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -338,19 +312,57 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClassesMagicFunTests/Pods-ClassesMagicFunTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E2522B9FE659508E692CD59A /* [CP] Check Pods Manifest.lock */ = {
+		662A14273E74557D9A27892C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClassesMagicFun/Pods-ClassesMagicFun-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F5E96C26BE49B9B6DAFABDA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClassesMagicFunTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDA8DE84DF18123314CD1EB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ClassesMagicFunTests/Pods-ClassesMagicFunTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClassesMagicFunTests/Pods-ClassesMagicFunTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -422,14 +434,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -452,7 +470,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -469,14 +487,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -493,7 +517,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -503,33 +527,39 @@
 		};
 		7DADE38A1D3FEAC300792225 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9670F7936EDBAABB1419F990 /* Pods-ClassesMagicFun.debug.xcconfig */;
+			baseConfigurationReference = 3C2E514360F2261E631F2019 /* Pods-ClassesMagicFun.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QM9U5GRFNF;
 				INFOPLIST_FILE = ClassesMagicFun/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flatironschool.Swift.ClassesMagicFun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		7DADE38B1D3FEAC300792225 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46ADA164BEA26182D4183F41 /* Pods-ClassesMagicFun.release.xcconfig */;
+			baseConfigurationReference = F46390D2A32C7D4ECC91E9FA /* Pods-ClassesMagicFun.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QM9U5GRFNF;
 				INFOPLIST_FILE = ClassesMagicFun/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flatironschool.Swift.ClassesMagicFun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		7DADE38D1D3FEAC300792225 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BF13A2B26B6A0CFCF6E74C5 /* Pods-ClassesMagicFunTests.debug.xcconfig */;
+			baseConfigurationReference = E3459C4CB93E0A49590F7DBC /* Pods-ClassesMagicFunTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -544,7 +574,7 @@
 		};
 		7DADE38E1D3FEAC300792225 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F2EA896849037104EE89D31 /* Pods-ClassesMagicFunTests.release.xcconfig */;
+			baseConfigurationReference = 615B4C077B2C66A3CE8CF928 /* Pods-ClassesMagicFunTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

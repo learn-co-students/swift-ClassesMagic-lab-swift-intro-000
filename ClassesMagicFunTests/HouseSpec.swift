@@ -24,12 +24,12 @@ class HouseSpec: QuickSpec {
                     let card1 = Card(suit: "♥️", rank: "Q")
                     let card2 = Card(suit: "♣️", rank: "5")
                     let card3 = Card(suit: "♠️", rank: "2")
-                    house.dealCard(card1)
-                    expect(house.willHit(1)).to(beTrue())
-                    house.dealCard(card2)
-                    expect(house.willHit(1)).to(beTrue())
-                    house.dealCard(card3)
-                    expect(house.willHit(1)).to(beFalse())
+                    house.dealCard(card: card1)
+                    expect(house.willHit(bet: 1)).to(beTrue())
+                    house.dealCard(card: card2)
+                    expect(house.willHit(bet: 1)).to(beTrue())
+                    house.dealCard(card: card3)
+                    expect(house.willHit(bet: 1)).to(beFalse())
                 }
             }
         }

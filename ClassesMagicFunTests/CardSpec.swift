@@ -8,6 +8,9 @@
 
 import Foundation
 import XCTest
+import QuickLook
+import Nimble
+@testable import ClassesMagicFun
 
 import Quick
 @testable import ClassesMagicFun
