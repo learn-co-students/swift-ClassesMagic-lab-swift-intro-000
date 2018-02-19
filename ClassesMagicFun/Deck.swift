@@ -11,7 +11,7 @@ import Foundation
 class Deck {
     
     var cards:[Card] = []
-    //private var deckIndex = -1
+    var nextCard:Card? = nil
     init() {
         createDeck()
         shuffle()
@@ -34,9 +34,17 @@ class Deck {
     }
     
     func drawCard() -> Card? {
-        if cards.count != 0 {
-            return cards[0]
+        
+        for i in 0..<52 {
+            nextCard = cards[i]
+            return nextCard
         }
+        /*
+        if cards.count != 0 {
+            let nextCard = cards[0]
+            return nextCard
+        }*/
+        
         return nil
     }
     
