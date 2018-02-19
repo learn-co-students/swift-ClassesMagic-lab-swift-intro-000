@@ -9,7 +9,7 @@
 class Player {
     let name:String
     
-    var wallet:UInt = 200
+    var wallet:UInt = 100
     var amountWin:UInt = 0
     var amoutLost:UInt = 0
     
@@ -52,18 +52,19 @@ class Player {
     }
     
     func canPlaceBet(bet:UInt) -> Bool {
-        if bet < wallet {
+        if bet <= wallet {
             return true
         }
+        print("no more Money")
         return false
     }
     
     func willHit(bet:UInt) -> Bool {
         if canPlaceBet(bet: bet) && handValue < 21 {
             wallet-=bet
-            amountWin+=(2*bet)
-            print("wallet = \(wallet)")
-            print("amountWin = \(amountWin)")
+            amountWin+=bet
+            print("wallet after Hit = \(wallet)")
+            print("Current amountWin pot = \(amountWin)")
             return true
         }
         return false
@@ -71,14 +72,16 @@ class Player {
     
     func win(amount:UInt) -> UInt {
         //print("wallet = \(wallet)")
-        wallet+=amountWin
+        let winProfit = amountWin
         //print("walletWinnings = \(wallet)")
-        return wallet
+        return winProfit
     }
     
-    func lose(amountLost:UInt) -> UInt {
-        wallet-=amountWin
-        return wallet
+    func lose(amount:UInt) -> UInt {
+        //print("wallet = \(wallet)")
+        let winProfit = amountWin
+        //print("walletWinnings = \(wallet)")
+        return winProfit
     }
     
 }

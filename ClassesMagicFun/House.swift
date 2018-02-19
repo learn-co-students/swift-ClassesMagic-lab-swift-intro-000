@@ -16,8 +16,11 @@ class House: Player {
     
     override func willHit(bet:UInt) -> Bool {
         
-        if bet < wallet && handValue <= 17 {
+        if bet <= wallet && handValue < 17 {
             wallet-=bet
+            amountWin+=bet
+            print("wallet after Hit = \(wallet)")
+            print("Current amountWin pot = \(amountWin)")
             return true
         }
         return false

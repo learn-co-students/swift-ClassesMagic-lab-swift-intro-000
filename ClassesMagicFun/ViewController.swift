@@ -25,23 +25,25 @@ class ViewController: UIViewController {
         while dealer.winner == nil {
             
             count+=1
+            print("count = \(count)")
             let player = (turn == "player" ? dealer.house : dealer.player)
             dealer.turn(player: player)
             turn = (turn == "player" ? "house" : "player")
             
-            print("count = \(count)")
+            
             //print("turn = \(turn)")
             //print("dealer.winner = \(String(describing: dealer.winner))")
             
         }
+        
         if dealer.winner?.name == "Player" {
             loser = dealer.house
         } else {
             loser = dealer.player
         }
         
-        let totalWinning = dealer.award()
-        print("\nWinner is: \(dealer.winner!.name), winnings = \(totalWinning),\nwallet $$ = \(dealer.player.wallet - dealer.player.amountWin), price $$ = \(dealer.player.amountWin)")
+        let totalWinning = dealer.award() + (dealer.winner?.wallet)!
+        print("\nWinner is: \(dealer.winner!.name), wallet+profit = \(totalWinning),\nwallet $$ = \((dealer.winner?.wallet)!), profit $$ = \(dealer.award())")
         
         print("\nLoser is: \(loser.name)")
     }

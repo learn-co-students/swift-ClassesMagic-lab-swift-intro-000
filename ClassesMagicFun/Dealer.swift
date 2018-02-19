@@ -25,12 +25,24 @@ class Dealer:Deck {
     var winner:Player? {
         print("player.handValue = \(player.handValue)  player.handSize = \(player.handSize )")
         print("house.handValue = \(house.handValue)  house.handSize = \(house.handSize)")
-        
+        print("house.wallet = \(house.wallet)  player.wallet = \(player.wallet)")
         if player.isBlackjack || house.isBusted {
             return player
         } else if house.isBlackjack || player.isBusted {
             return house
-        } else if player.handSize == 5 && (house.handSize == 5 || house.handValue > 17) {
+        } else if player.handSize == 5 && (house.handSize == 5 || house.handValue >= 17) {
+            if player.handValue > house.handValue {
+                return player
+            } else {
+                return house
+            }
+        } else if player.wallet < bet && house.wallet < bet {
+            if player.handValue > house.handValue {
+                return player
+            } else {
+                return house
+            }
+        } else if player.wallet < bet && house.handValue >= 17 {
             if player.handValue > house.handValue {
                 return player
             } else {
@@ -57,6 +69,7 @@ class Dealer:Deck {
         }
     }
     func turn(player:Player) {
+        print("\(player.name) enters Turn() Function")
         if player.handValue < 21 && player.handSize < 5 {
             if player.canPlaceBet(bet: bet) {
                 if player.willHit(bet: bet) {
@@ -69,11 +82,11 @@ class Dealer:Deck {
     
     func award() -> UInt {
         if (winner != nil) {
-            let winnings = player.win(amount: amountWin)
+            let winnings = player.amountWin + house.amountWin
             //print("winnings = \(winnings)")
             return winnings
         }
-        return player.lose(amountLost: amountWin)
+        return player.lose(amount: amountWin)
     }
 
 }

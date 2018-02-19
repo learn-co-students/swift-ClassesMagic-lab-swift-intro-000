@@ -138,7 +138,7 @@ class PlayerSpec: QuickSpec {
 
             describe("win") {
                 it("adds the winning amount to the player's wallet") {
-                    player.win(amountWin: 100)
+                    player.win(amount: 100)
                     expect(player.wallet).to(equal(200))
                 }
             }
