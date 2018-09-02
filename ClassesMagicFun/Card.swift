@@ -9,7 +9,18 @@
 import Foundation
 
 class Card {
-  
+    var suit: String
+    var rank: String
+    var label: String {
+        return "\(rank) \(suit)"
+    }
+//    var value: Int{
+//        return 
+//    }
+    
+    init(suit: String, rank: String) {
+        <#statements#>
+    }
 }
 
 
