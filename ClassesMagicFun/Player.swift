@@ -8,15 +8,15 @@
 
 class Player {
     let name: String
-    var wallet: UInt
-    var hand: [Card]
-    var handSize: Int
-    var handValue: UInt
-    var isBlackjack: Bool
-    var isBusted: Bool
+    var wallet: UInt = 0
+    var hand: [Card] = []
+    var handSize: Int = 0
+    var handValue: UInt = 0
+    var isBlackjack: Bool = false
+    var isBusted: Bool = false
     
     init(player: String) {
-        name = player
+        self.name = player
     }
     
     func dealCard(card: Card) {
@@ -24,16 +24,10 @@ class Player {
     }
     
     func canPlaceBet(bet: UInt) -> Bool {
-        if bet < wallet{
-            return true
-        }
-        return false
+        return bet < wallet
     }
     func willHit(bet: UInt) -> Bool {
-        if handValue < 21 && bet < wallet{
-            return true
-        }
-        return false
+         return handValue < 21 && bet < wallet
     }
     func win(the bet: UInt){
         wallet = wallet + bet

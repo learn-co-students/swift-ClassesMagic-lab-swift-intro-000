@@ -9,17 +9,29 @@
 import Foundation
 
 class Card {
-    var suit: String
-    var rank: String
+    let suit: String
+    let rank: String
     var label: String {
         return "\(rank) \(suit)"
     }
-//    var value: Int{
-//        return 
-//    }
-    
+    var value: Int{
+        switch rank {
+        case "A":
+            return 1
+        case "K":
+            return 10
+        case "Q":
+            return 10
+        case "J":
+            return 10
+        default:
+            return Int(rank) ?? 0
+        }
+        
+    }
     init(suit: String, rank: String) {
-        <#statements#>
+        self.suit = suit
+        self.rank = rank
     }
 }
 
