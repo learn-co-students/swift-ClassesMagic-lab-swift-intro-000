@@ -9,16 +9,16 @@
 import Foundation
 import XCTest
 
-import Quick
+import QuickLook
 @testable import ClassesMagicFun
 
 class CardSpec: QuickSpec {
     override func spec() {
         describe("Card") {
-            let aceOfSpades = Card(suit: "♠︎", rank: "A")
-            let queenOfHearts = Card(suit: "♥︎", rank: "Q")
-            let tenOfDiamonds = Card(suit: "♦︎", rank: "10")
-            let twoOfClubs = Card(suit: "♣︎", rank: "2")
+            let aceOfSpades = Card(suit: "♠️", rank: "A")
+            let queenOfHearts = Card(suit: "❤️", rank: "Q")
+            let tenOfDiamonds = Card(suit: "♦️", rank: "10")
+            let twoOfClubs = Card(suit: "♣️", rank: "2")
 
             describe("initializer") {
                 it("should set the suit property") {
