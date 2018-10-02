@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let dealer = Dealer()
+        let dealer = Dealer(currentBet: 10)
         var turn = "player"
         dealer.deal()
         if let _ = dealer.winner {
@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         }
         while dealer.winner == nil {
             let player = turn == "player" ? dealer.house : dealer.player
-            dealer.turn(player)
+            dealer.turn(player: player)
             turn = turn == "player" ? "house" : "player"
         }
         dealer.award()
