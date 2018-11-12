@@ -8,8 +8,6 @@
 
 import Foundation
 import XCTest
-import Quick
-import Nimble
 @testable import ClassesMagicFun
 
 class DealerSpec: QuickSpec {
