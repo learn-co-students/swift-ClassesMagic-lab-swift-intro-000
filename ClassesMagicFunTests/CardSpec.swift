@@ -8,8 +8,6 @@
 
 import Foundation
 import XCTest
-
-import Quick
 @testable import ClassesMagicFun
 
 class CardSpec: QuickSpec {
